@@ -9,6 +9,9 @@
   main {
     width: $width;
   }
+  .post-img {
+    width: 640px;
+  }
 }
 @media screen and (900px <= width < 1320px) {
   $width: 900px;
@@ -26,6 +29,15 @@
   }
   main {
     width: $width;
+  }
+  .post-content {
+    div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .post-img {
+    width: 640px;
   }
 }
 @media screen and (648px <= width < 900px) {
@@ -45,6 +57,15 @@
   main {
     width: $width;
   }
+  .post-content {
+    div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .post-img {
+    width: 528px;
+  }
 }
 @media screen and (420px <= width < 648px) {
   $width: 420px;
@@ -62,5 +83,18 @@
   }
   main {
     width: $width;
+  }
+  .post-content {
+    div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .post-img {
+    width: 300px;
+  }
+  .post-header {
+    flex-direction: column-reverse;
+    gap: 15px;
   }
 }

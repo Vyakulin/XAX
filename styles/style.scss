@@ -129,6 +129,7 @@ header {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 999;
 }
 .header-wrapper {
   display: flex;
@@ -264,6 +265,7 @@ header {
   position: absolute;
   top: 80px;
   right: 0;
+  z-index: 999;
 }
 .burger-menu {
   display: flex;

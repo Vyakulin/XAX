@@ -1,0 +1,51 @@
+$radius: 15px;
+$exo: 'Exo 2', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+.post {
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: var(--main-gray);
+  border-radius: $radius;
+  color: var(--second);
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    div {
+      display: flex;
+      gap: 30px;
+      .post-img {
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+  .post-reactions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .fi {
+      cursor: pointer;
+      font-size: 40px;
+      color: var(--second);
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+}
