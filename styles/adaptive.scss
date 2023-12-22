@@ -1,0 +1,66 @@
+@media screen and (width >= 1320px) {
+  $width: 1320px;
+  .header-wrapper {
+    width: $width;
+  }
+  .burger-button {
+    display: none;
+  }
+  main {
+    width: $width;
+  }
+}
+@media screen and (900px <= width < 1320px) {
+  $width: 900px;
+  .header-wrapper {
+    width: $width;
+  }
+  .header-menu {
+    gap: 30px;
+  }
+  .header-right {
+    gap: 30px;
+  }
+  .burger-button {
+    display: none;
+  }
+  main {
+    width: $width;
+  }
+}
+@media screen and (648px <= width < 900px) {
+  $width: 648px;
+  .header-wrapper {
+    width: $width;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .burger-button {
+    display: inline-flex;
+  }
+  main {
+    width: $width;
+  }
+}
+@media screen and (420px <= width < 648px) {
+  $width: 420px;
+  .header-wrapper {
+    width: $width;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .burger-button {
+    display: inline-flex;
+  }
+  main {
+    width: $width;
+  }
+}

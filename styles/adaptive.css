@@ -1,0 +1,64 @@
+@media screen and (width >= 1320px) {
+  .header-wrapper {
+    width: 1320px;
+  }
+  .burger-button {
+    display: none;
+  }
+  main {
+    width: 1320px;
+  }
+}
+@media screen and (900px <= width < 1320px) {
+  .header-wrapper {
+    width: 900px;
+  }
+  .header-menu {
+    gap: 30px;
+  }
+  .header-right {
+    gap: 30px;
+  }
+  .burger-button {
+    display: none;
+  }
+  main {
+    width: 900px;
+  }
+}
+@media screen and (648px <= width < 900px) {
+  .header-wrapper {
+    width: 648px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .burger-button {
+    display: inline-flex;
+  }
+  main {
+    width: 648px;
+  }
+}
+@media screen and (420px <= width < 648px) {
+  .header-wrapper {
+    width: 420px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .burger-button {
+    display: inline-flex;
+  }
+  main {
+    width: 420px;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */

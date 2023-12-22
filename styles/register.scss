@@ -1,0 +1,66 @@
+$radius: 15px;
+$exo: 'Exo 2', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+.registration {
+  display: inline-flex;
+  padding: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--main-gray);
+  align-self: center;
+  border-radius: $radius;
+  h1, p {
+    color: var(--second);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    label {
+      cursor: text;
+      width: 250px;
+      background-color: transparent;
+      border-bottom: 1px solid var(--second);
+      &:hover {
+        border-color: var(--second-gray);
+        &:before {
+          color: var(--second-gray);
+        }
+      }
+      &:focus-within {
+        border-color: var(--accent);
+        &:before {
+          font-size: 14px;
+          color: var(--second-gray);
+          translate: 0 -15px;
+        }
+      }
+      &:before {
+        transition: all ease-out 500ms;
+        color: var(--second);
+        position: absolute;
+      }
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: var(--second);
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+.username:before {
+  content: 'Никнейм';
+}
+.password:before {
+  content: 'Пароль';
+}
+.re-password:before {
+  content: 'Повторите пароль';
+}

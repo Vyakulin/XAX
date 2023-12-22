@@ -1,0 +1,46 @@
+@keyframes bb-1 {
+  to {
+    rotate: 45deg;
+    translate: 0 20px;
+  }
+}
+@keyframes bb-2 {
+  to {
+    translate: 20px 0;
+    opacity: 0;
+  }
+}
+@keyframes bb-3 {
+  to {
+    rotate: -45deg;
+    translate: 0 -20px;
+  }
+}
+@keyframes bb-1-1 {
+  to {
+    rotate: 0deg;
+    translate: 0;
+  }
+}
+@keyframes bb-2-2 {
+  to {
+    translate: 0;
+    opacity: 1;
+  }
+}
+@keyframes bb-3-3 {
+  to {
+    rotate: 0deg;
+    translate: 0;
+  }
+}
+@keyframes burger-open {
+  to {
+    translate: 0;
+  }
+}
+@keyframes burger-close {
+  to {
+    translate: 250px 0;
+  }
+}

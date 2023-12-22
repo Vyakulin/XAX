@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.registration {
+  display: inline-flex;
+  padding: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--main-gray);
+  align-self: center;
+  border-radius: 15px;
+}
+.registration h1, .registration p {
+  color: var(--second);
+}
+.registration form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.registration form label {
+  cursor: text;
+  width: 250px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--second);
+}
+.registration form label:hover {
+  border-color: var(--second-gray);
+}
+.registration form label:hover:before {
+  color: var(--second-gray);
+}
+.registration form label:focus-within {
+  border-color: var(--accent);
+}
+.registration form label:focus-within:before {
+  font-size: 14px;
+  color: var(--second-gray);
+  translate: 0 -15px;
+}
+.registration form label:before {
+  transition: all ease-out 500ms;
+  color: var(--second);
+  position: absolute;
+}
+.registration form label input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: var(--second);
+}
+.registration form label input:focus {
+  outline: none;
+}
+
+.username:before {
+  content: "Никнейм";
+}
+
+.password:before {
+  content: "Пароль";
+}
+
+.re-password:before {
+  content: "Повторите пароль";
+}
+
+/*# sourceMappingURL=register.css.map */

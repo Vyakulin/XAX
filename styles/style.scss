@@ -1,0 +1,324 @@
+// animations
+@use 'animations';
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Ubuntu:wght@400;500&display=swap');
+
+// variables
+$radius: 15px;
+$exo: 'Exo 2', sans-serif;
+$ubuntu: 'Ubuntu', sans-serif;
+
+// something
+* {
+  transition: all ease-out 300ms;
+}
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+// buttons
+.button {
+  display: inline-flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: $radius;
+  cursor: pointer;
+  &:active {
+    scale: 0.9;
+  }
+}
+.button-full {
+  @extend .button;
+  background: var(--accent);
+  color: var(--main);
+  &:hover {
+    background: var(--accent-hover);
+  }
+}
+.button-border {
+  @extend .button;
+  background: transparent;
+  color: var(--accent);
+  outline-offset: -5px;
+  outline: 5px solid var(--accent);
+  &:hover {
+    outline-color: var(--accent-hover);
+    color: var(--accent-hover);
+  }
+}
+
+// text
+.h1 {
+  font: {
+    family: $exo;
+    size: 40px;
+    weight: 600;
+  }
+}
+.h2 {
+  font: {
+    family: $ubuntu;
+    size: 32px;
+    weight: 500;
+  }
+}
+.h3 {
+  font: {
+    family: $ubuntu;
+    size: 28px;
+    weight: 400;
+  }
+}
+.p {
+  font: {
+    family: $ubuntu;
+    size: 24px;
+    weight: 400;
+  }
+}
+.mini {
+  font: {
+    family: $ubuntu;
+    size: 18px;
+    weight: 400;
+  }
+}
+
+// links
+.link {
+  cursor: pointer;
+  color: var(--accent);
+  &:hover {
+    color: var(--accent-hover);
+  }
+}
+
+// header
+header {
+  background: var(--main-gray);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-logo {
+  cursor: pointer;
+  path {
+    fill: var(--second);
+  }
+  &:hover {
+    path {
+      fill: var(--accent);
+    }
+  }
+}
+// search
+.header-search {
+  cursor: text;
+  display: flex;
+  width: 240px;
+  height: 40px;
+  background-color: var(--second);
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+  border-radius: $radius;
+  &:hover {
+    background-color: var(--accent-hover);
+    .search-icon {
+      color: var(--main);
+    }
+  }
+  &:focus-within {
+    background-color: var(--accent);
+    .search-icon {
+      color: var(--main);
+    }
+  }
+}
+.search-icon {
+  font-size: 24px;
+  translate: 0 2px;
+  color: var(--main-gray);
+}
+#search {
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: var(--main);
+  font: {
+    family: $ubuntu;
+    size: 24px;
+    weight: 500;
+  }
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: var(--main);
+    }
+  }
+  &:hover::placeholder {
+    color: var(--main);
+  }
+  &::placeholder {
+    transition: ease-out 300ms;
+    color: var(--main-gray);
+  }
+}
+// menu
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.header-link {
+  color: var(--second);
+  font: {
+    family: $ubuntu;
+    size: 24px;
+    weight: 500;
+  }
+  &:hover {
+    color: var(--accent);
+  }
+}
+.header-link-active {
+  @extend .header-link;
+  text-decoration: underline;
+}
+// right
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+}
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  &:hover .header-username {
+    color: var(--accent);
+  }
+}
+.header-settings {
+  cursor: pointer;
+  path {
+    fill: var(--second);
+  }
+  &:hover path {
+    fill: var(--accent);
+  }
+}
+// burger
+.burger {
+  display: none;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  background-color: var(--main-gray);
+  border-bottom-left-radius: $radius;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 0;
+}
+.burger-button {
+  display: inline-flex;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.burger-open {
+  animation: burger-open 1s ease-out 1;
+}
+.burger-close {
+  animation: burger-close 1s ease-out 1;
+}
+// rectangles
+.bb {
+  width: 60px;
+  height: 10px;
+  background-color: var(--second);
+  border-radius: $radius;
+}
+.bb-1 {
+  animation: bb-1 500ms ease-out 1;
+}
+.bb-1-1 {
+  animation: bb-1-1 500ms ease-out 1;
+}
+.bb-2 {
+  animation: bb-2 500ms ease-out 1;
+}
+.bb-2-2 {
+  animation: bb-2-2 500ms ease-out 1;
+}
+.bb-3 {
+  animation: bb-3 500ms ease-out 1;
+}
+.bb-3-3 {
+  animation: bb-3-3 500ms ease-out 1;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 180px;
+  display: flex;
+  flex-direction: column;
+}
