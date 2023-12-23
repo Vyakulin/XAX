@@ -97,4 +97,11 @@
     flex-direction: column-reverse;
     gap: 15px;
   }
+  .profile {
+    flex-direction: column;
+    .profile-info {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
 }

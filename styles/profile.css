@@ -1,0 +1,96 @@
+.post {
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: var(--main-gray);
+  border-radius: 15px;
+  color: var(--second);
+}
+.post .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.post .post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.post .post-content div {
+  display: flex;
+  gap: 30px;
+}
+.post .post-content div .post-img {
+  aspect-ratio: 16/9;
+}
+.post .post-reactions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.post .post-reactions div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post .post-reactions .fi {
+  cursor: pointer;
+  font-size: 40px;
+  color: var(--second);
+}
+.post .post-reactions .fi:hover {
+  color: var(--accent);
+}
+
+.profile {
+  display: flex;
+  padding: 60px;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--main-gray);
+  border-radius: 15px;
+}
+.profile .profile-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.profile .profile-info .profile-info-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.profile .profile-info .profile-info-main .profile-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.profile .profile-info .profile-info-main .profile-info-text .profile-info-text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.profile .profile-info .profile-info-friends {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile .profile-info .profile-info-friends .fi {
+  font-size: 40px;
+  margin-top: 15px;
+}
+.profile .fi-ss-user-add {
+  font-size: 40px;
+  cursor: pointer;
+}
+.profile .fi-ss-user-add:hover {
+  color: var(--accent);
+}
+
+/*# sourceMappingURL=profile.css.map */

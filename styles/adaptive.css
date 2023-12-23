@@ -87,6 +87,13 @@
     flex-direction: column-reverse;
     gap: 15px;
   }
+  .profile {
+    flex-direction: column;
+  }
+  .profile .profile-info {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 /*# sourceMappingURL=adaptive.css.map */

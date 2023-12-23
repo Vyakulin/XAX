@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="node_modules/@flaticon/flaticon-uicons/css/all/all.css">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/adaptive.css">
     <title>XAX</title>
 </head>
 <body>
-    <header>
+<header>
     <div class="header-wrapper">
         <div class="header-left">
             <a href="index.html">
@@ -33,7 +33,7 @@
             <li><a href="index.html" class="header-link">Друзья</a></li>
         </ul>
         <div class="header-right">
-            <a class="header-user">
+            <a href="registration.html" class="header-user">
                 <img alt="ава" class="header-user-ava" src="assets/default_ava.png">
                 <h1 class="header-username header-link">Юзернейм</h1>
             </a>
@@ -61,25 +61,58 @@
         </svg>
     </div>
 </header>
-    <main>
-        <section class="registration">
-            <h1 class="h1">Регистрация</h1>
-            <form class="registration-form">
-                <label class="username p">
-                    <input type="text" name="username" id="username" class="p" autocomplete="username">
-                </label>
-                <label class="password p">
-                    <input type="password" name="password" id="password" class="p" autocomplete="password">
-                </label>
-                <label class="re-password p">
-                    <input type="password" name="re-password" id="re-password" class="p" autocomplete="password">
-                </label>
-            </form>
-            <button class="button-full h3">Зарегистрироваться</button>
-            <p class="mini">Уже зарегистрированы? <a href="login.html" class="link mini">Вход</a></p>
-        </section>
-    </main>
-    <p class="p" style="color: var(--second)">UIcons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a></p>
-    <script src="scripts/burger.js"></script>
+<main>
+    <section class="profile">
+        <div class="profile-info">
+            <div class="profile-info-main">
+                <img src="assets/default_ava2.png" alt="dad">
+                <div class="profile-info-text">
+                    <div class="profile-info-text-main">
+                        <h1 class="h1">Юзернейм</h1>
+                        <p class="mini">Имя Фамилия</p>
+                    </div>
+                    <p class="p">О себе</p>
+                </div>
+            </div>
+            <div class="profile-info-friends">
+                <i class="fi fi-ss-user"></i>
+                <p class="p">999</p>
+            </div>
+        </div>
+        <i class="fi fi-ss-user-add"></i>
+    </section>
+    <section class="post">
+        <div class="post-header">
+            <h1 class="h1">Название поста</h1>
+            <a href="registration.html" class="header-user">
+                <img alt="ава" class="header-user-ava" src="assets/default_ava.png">
+                <h1 class="header-username header-link">Юзернейм</h1>
+            </a>
+        </div>
+        <div class="post-content">
+            <h2 class="h2">Подзаголовок</h2>
+            <div>
+                <p class="p">Текст постаТекст постаТекст постаТекст постаТекст постТекст постаТекст постаТекст постаТекст стаТекст постстаТекст пост</p>
+                <img alt="adad" src="assets/nothing.png" class="post-img">
+            </div>
+        </div>
+        <div class="post-reactions">
+            <div class="like">
+                <i class="fi fi-sr-heart"></i>
+                <p class="p">999</p>
+            </div>
+            <div class="repost">
+                <i class="fi fi-br-arrows-retweet"></i>
+                <p class="p">999</p>
+            </div>
+            <div class="comment">
+                <i class="fi fi-sr-comment-dots"></i>
+                <p class="p">999</p>
+            </div>
+        </div>
+    </section>
+</main>
+<p class="p" style="color: var(--second)">UIcons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a></p>
+<script src="scripts/burger.js"></script>
 </body>
 </html>
