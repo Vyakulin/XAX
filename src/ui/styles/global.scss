@@ -1,0 +1,24 @@
+@import 'elements.scss';
+
+:root {
+    font-size: 4px;
+}
+
+body, h1, h2, h3, p, button, a, input {
+    margin: 0;
+    padding: 0;
+    all: unset;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--montserrat);
+    background-color: $black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 170px 5vw;
+}

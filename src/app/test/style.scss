@@ -1,0 +1,18 @@
+@import '@/ui/styles/elements.scss';
+
+.test {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: $white;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    .inputs label {
+        width: 150px;
+        height: auto;
+    }
+}
