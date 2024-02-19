@@ -126,7 +126,9 @@ header {
         rotate(-45deg);
 }
 .burger-rect2 {
-    transform: scale(0);
+    transform: 
+    scale(0)
+    rotate(360deg);
 }
 
 @media screen and (max-width: 960px) {
