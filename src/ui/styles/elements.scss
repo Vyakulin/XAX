@@ -305,6 +305,7 @@ $border: 1.5px;
 
 // logo
 .logo {
+    transition: all .4s $transition;
     path {
         fill: currentColor;
     }

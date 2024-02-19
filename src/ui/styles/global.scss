@@ -3,22 +3,137 @@
 :root {
     font-size: 4px;
 }
-
-body, h1, h2, h3, p, button, a, input {
+body, h1, h2, h3, p, button, a, input, ul {
     margin: 0;
     padding: 0;
     all: unset;
     text-decoration: none;
 }
-
 body {
     font-family: var(--montserrat);
     background-color: $black;
+    overflow-x: hidden;
 }
-
 main {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding: 170px 5vw;
+    padding: 0 5vw;
+    margin-top: 188px;
+}
+
+header {
+    width: 100vw;
+    margin-top: 12px;
+    position: fixed;
+    opacity: 1;
+    z-index: 2;
+}
+.header-wrapper {
+    display: flex;
+    background-color: $white;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: $radius;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+        cursor: pointer;
+        color: $black;
+        &:hover {
+            color: $black-hover;
+        }
+    }
+}
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    svg {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+    &:hover {
+        .burger-rect {
+            background-color: $black-hover;
+        }
+    }
+}
+.burger-rect {
+    transition: all .4s $transition;
+    background-color: $black;
+    width: 60px;
+    height: 8px;
+    border-radius: $radius;
+}
+
+.burger-nav {
+    position: absolute;
+    transition: all .4s $transition;
+    transform: translateY(-135px);
+    background-color: $white;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    padding: 12px 12px 12px 8px;
+    border-radius: $radius 0 $radius $radius;
+    top: 100px;
+    opacity: 0;
+    left: 5vw;
+}
+.burger-open {
+    transform: translate(0);
+    opacity: 1;
+}
+.nav-item {
+    color: $black;
+    cursor: pointer;
+    transition: all .4s $transition;
+    &:hover {
+        color: $color;
+    }
+}
+.nav-item-active {
+    color: $color;
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+.burger-rect1 {
+    transform: 
+        translateY(20px)
+        rotate(45deg);
+}
+.burger-rect3 {
+    transform: 
+        translateY(-20px)
+        rotate(-45deg);
+}
+.burger-rect2 {
+    transform: scale(0);
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        padding: 0 1vw;
+    }
+    .header-wrapper {
+        width: 98vw;
+    }
+    .burger-nav {
+        left: 1vw;
+    }
 }

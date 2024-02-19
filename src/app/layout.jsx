@@ -1,3 +1,4 @@
+import { Header } from "@/ui/components/main";
 import "@/ui/styles/global.scss";
 
 export const metadata = {
@@ -8,6 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body>
+        <Header />
         <main>
           {children}
         </main>
