@@ -2,7 +2,7 @@ import { Header } from "@/ui/components/main";
 import "@/ui/styles/global.scss";
 
 export const metadata = {
-  title: "my-app",
+  title: "XAX",
 };
 
 export default function RootLayout({ children }) {
