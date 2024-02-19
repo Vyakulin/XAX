@@ -31,7 +31,7 @@ header {
 }
 .header-wrapper {
     display: flex;
-    background-color: $white;
+    background-color: $black-hover;
     padding: 12px;
     box-sizing: border-box;
     border-radius: $radius;
@@ -41,10 +41,11 @@ header {
     margin-left: auto;
     margin-right: auto;
     .logo {
+        transition: all .4s $transition;
         cursor: pointer;
-        color: $black;
+        color: $white;
         &:hover {
-            color: $black-hover;
+            color: $white-hover;
         }
     }
 }
@@ -52,6 +53,7 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
+    color: $white;
     svg {
         width: 36px;
         height: 36px;
@@ -65,13 +67,13 @@ header {
     cursor: pointer;
     &:hover {
         .burger-rect {
-            background-color: $black-hover;
+            background-color: $white-hover;
         }
     }
 }
 .burger-rect {
     transition: all .4s $transition;
-    background-color: $black;
+    background-color: $white;
     width: 60px;
     height: 8px;
     border-radius: $radius;
@@ -81,7 +83,7 @@ header {
     position: absolute;
     transition: all .4s $transition;
     transform: translateY(-135px);
-    background-color: $white;
+    background-color: $black-hover;
     flex-direction: column;
     gap: 12px;
     opacity: 1;
@@ -98,7 +100,7 @@ header {
     opacity: 1;
 }
 .nav-item {
-    color: $black;
+    color: $white;
     cursor: pointer;
     transition: all .4s $transition;
     &:hover {
