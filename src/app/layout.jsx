@@ -1,5 +1,6 @@
 import { Header, Footer } from "@/ui/components/main";
 import "@/ui/styles/global.scss";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "XAX",
