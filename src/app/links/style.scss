@@ -26,7 +26,8 @@
 .links-links {
     display: flex;
     flex-wrap: wrap;
-    width: 560px;
+    max-width: 560px;
+    min-width: 252px;
     gap: 12px;
     align-items: center;
     justify-content: center;
