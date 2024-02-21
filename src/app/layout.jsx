@@ -1,4 +1,4 @@
-import { Header } from "@/ui/components/main";
+import { Header, Footer } from "@/ui/components/main";
 import "@/ui/styles/global.scss";
 
 export const metadata = {
@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
