@@ -18,18 +18,19 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 180px;
     padding: 0 5vw;
-    margin-top: 188px;
+    margin-top: 181px;
+    margin-bottom: 100px;
 }
 
 header {
     width: 100vw;
-    margin-top: 12px;
     position: fixed;
     opacity: 1;
     z-index: 10;
     background-color: $black;
+    margin-top: 8px;
 }
 .header-wrapper {
     display: flex;
@@ -43,6 +44,8 @@ header {
     margin-left: auto;
     margin-right: auto;
     .logo {
+        width: 48px;
+        height: 48px;
         transition: all .4s $transition;
         cursor: pointer;
         color: $white;
@@ -84,16 +87,17 @@ header {
 .burger-nav {
     position: absolute;
     transition: all .4s $transition;
-    transform: translateY(-135px);
+    transform: translateY(-127px);
     background-color: $black-hover;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     display: flex;
     padding: 12px 12px 12px 8px;
-    border-radius: $radius 0 $radius $radius;
-    top: 100px;
+    border-radius: $radius;
+    top: 89px;
     opacity: 0;
     left: 5vw;
+    box-shadow: 0 0 7px $white;
 }
 .burger-open {
     transform: translate(0);
@@ -131,11 +135,60 @@ header {
     rotate(360deg);
 }
 
+footer {
+    width: 100vw;
+    background-color: $black;
+}
+.footer-wrapper {
+    display: flex;
+    background-color: $black-hover;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: $radius;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+        transition: all .4s $transition;
+        cursor: pointer;
+        color: $white;
+        &:hover {
+            color: $white-hover;
+        }
+    }
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-links {
+    cursor: pointer;
+    display: flex;
+    transition: all .4s $transition;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    color: $white;
+    svg {
+        width: 32px;
+        height: 32px;
+    }
+    &:hover {
+        color: $white-hover;
+    }
+}
+
 @media screen and (max-width: 960px) {
     main {
         padding: 0 1vw;
     }
     .header-wrapper {
+        width: 98vw;
+    }
+    .footer-wrapper {
         width: 98vw;
     }
     .burger-nav {

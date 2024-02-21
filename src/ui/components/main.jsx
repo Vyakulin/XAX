@@ -1,6 +1,6 @@
 'use client'
 
-import { FaUser } from "react-icons/fa";
+import { FaUser, FaLink } from "react-icons/fa";
 import { Logo, Text } from "./elements";
 import Link from "next/link";
 import { useState } from "react";
@@ -57,4 +57,23 @@ const Header = function() {
     </>)
 }
 
-export { Header }
+const Footer = function() {
+    return (<>
+        <footer>
+            <div className="footer-wrapper">
+                <ul className="footer-nav">
+                    <Nav />
+                </ul>
+                <Link href='/'>
+                    <Logo />
+                </Link>
+                <Link href='/links' className="footer-links">
+                    <FaLink />
+                    <Text style='sm'>Ссылки</Text>
+                </Link>
+            </div>
+        </footer>
+    </>)
+}
+
+export { Header, Footer }

@@ -1,0 +1,76 @@
+@import '@/ui/styles/elements.scss';
+
+.links {
+    display: flex;
+    padding: 48px;
+    background-color: $black-hover;
+    border-radius: $radius;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    gap: 32px;
+}
+.links-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.links-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.link {
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    background-color: var(--bgcolor);
+    color: $black;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius;
+    transition: all .4s $transition;
+    &:hover {
+        filter: brightness(1.2);
+    }
+    svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+#twitch {
+    --bgcolor: #9146FF;
+}
+#telegram {
+    --bgcolor: #27A7E7;
+}
+#trovo {
+    --bgcolor: #3CDB7D;
+}
+#youtube {
+    --bgcolor: #FF0000;
+}
+#vkplay {
+    --bgcolor: #0077ff;
+}
+#boosty {
+    --bgcolor: #f0762a;
+}
+#steam {
+    --bgcolor: #66c0f4;
+}
+#tinkoff {
+    --bgcolor: #FFDC2D;
+}
