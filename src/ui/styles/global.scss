@@ -27,16 +27,15 @@ main {
     width: 12px;
 }
   ::-webkit-scrollbar-track {
-    background: $black-hover;
+    background: transparent;
 }
   ::-webkit-scrollbar-thumb {
     background: $white;
     border-radius: $radius;
-    border: 2.5px solid $black-hover;
-    transition: background-color .4s $transition;
-}
-  ::-webkit-scrollbar-thumb:hover {
-    background: $white-hover;
+    border: 2.75px solid $black;
+    &:hover {
+        background: $white-hover;
+    }
 }
   
 
@@ -65,6 +64,7 @@ header {
         transition: all .4s $transition;
         cursor: pointer;
         color: $white;
+        justify-self: center;
         &:hover {
             color: $white-hover;
         }
@@ -160,13 +160,13 @@ footer {
     background-color: $black-hover;
     padding: 24px 12px;
     box-sizing: border-box;
-    border-radius: $radius;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
     .logo {
+        justify-self: center;
         transition: all .4s $transition;
         cursor: pointer;
         color: $white;
@@ -202,10 +202,11 @@ footer {
         padding: 0 1vw;
     }
     .header-wrapper {
-        width: 98vw;
+        width: 100vw;
+        border-radius: 0;
     }
-    .footer-wrapper {
-        width: 98vw;
+    header {
+        margin-top: 0;
     }
     .burger-nav {
         left: 1vw;
