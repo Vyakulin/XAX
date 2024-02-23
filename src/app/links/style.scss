@@ -37,14 +37,15 @@
     padding: 12px;
     display: flex;
     gap: 8px;
-    background-color: var(--bgcolor);
-    color: $black;
+    color: var(--bgcolor);
     align-items: center;
     justify-content: center;
     border-radius: $radius;
     transition: all .4s $transition;
+    outline-offset: -$border;
+    outline: $border solid $black-hover;
     &:hover {
-        filter: brightness(1.2);
+        outline-color: currentColor;
     }
     svg {
         width: 48px;
@@ -74,4 +75,7 @@
 }
 #tinkoff {
     --bgcolor: #FFDC2D;
+    svg {
+        transform: translateY(2px);
+    }
 }
