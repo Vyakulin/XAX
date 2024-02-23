@@ -101,7 +101,7 @@ header {
 }
 
 .burger-nav {
-    position: absolute;
+    position: fixed;
     transition: all .4s $transition;
     transform: translateY(-127px);
     background-color: $black-hover;
