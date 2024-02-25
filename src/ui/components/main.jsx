@@ -37,7 +37,7 @@ const Header = function() {
                     }
                     )}></span>
                 </div>
-                <Link href='/'>
+                <Link href='/' className="logo-container">
                     <Logo />
                 </Link>
                 <div className="header-profile">
@@ -64,7 +64,7 @@ const Footer = function() {
                 <ul className="footer-nav">
                     <Nav />
                 </ul>
-                <Link href='/'>
+                <Link href='/' className="logo-container">
                     <Logo />
                 </Link>
                 <Link href='/links' className="footer-links">
