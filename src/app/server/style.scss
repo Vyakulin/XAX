@@ -1,0 +1,30 @@
+@import '@/ui/styles/elements.scss';
+
+.server {
+    background-color: $black-hover;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    border-radius: $radius;
+    align-self: center;
+    color: $white;
+    width: 570px;
+}
+.container {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ip {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
