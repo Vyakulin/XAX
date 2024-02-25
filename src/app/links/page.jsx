@@ -1,6 +1,7 @@
 import { Text } from '@/ui/components/elements';
 import './style.scss';
 import { FaTwitch, FaTelegram, FaYoutube, FaSteam } from 'react-icons/fa';
+import { RiKickFill } from "react-icons/ri";
 import Link from 'next/link';
 
 export default function Page() {
@@ -41,6 +42,10 @@ export default function Page() {
                                 </defs>
                             </svg>
                             <Text style='h3'>VK Play Live</Text>
+                        </Link>
+                        <Link target='_blank' href='https://vkplay.live/xax' className="link" id='kick'>
+                            <RiKickFill />
+                            <Text style='h3'>Kick</Text>
                         </Link>
                     </div>
                 </div>
