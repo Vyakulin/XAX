@@ -43,7 +43,7 @@ export default function Page() {
                             </svg>
                             <Text style='h3'>VK Play Live</Text>
                         </Link>
-                        <Link target='_blank' href='https://vkplay.live/xax' className="link" id='kick'>
+                        <Link target='_blank' href='https://kick.com/xaxdanil' className="link" id='kick'>
                             <RiKickFill />
                             <Text style='h3'>Kick</Text>
                         </Link>
