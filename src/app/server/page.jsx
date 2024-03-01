@@ -10,11 +10,8 @@ export default function Page() {
             <Text style='h1'>Сервер</Text>
             <div className="container">
                 <Text style='h2'>Информация</Text>
-                <div className="ip">
-                    <Text style='h3'>IP:  xax.falixsrv.me</Text>
-                    <Text style='mn'>Если не работает: 88.209.197.230:32494</Text>
-                </div>
-                <Text style='h3'>Версия: 1.20.2 Java Edition</Text>
+                <Text style='h3'>IP:  XAXOfficial.minehut.gg</Text>
+                <Text style='h3'>Версия: 1.20.4 Java Edition</Text>
             </div>
             <div className="container">
                 <Text style='h2'>Описание</Text>
