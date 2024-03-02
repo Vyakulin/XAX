@@ -10,7 +10,7 @@ export default function Page() {
             <Text style='h1'>Сервер</Text>
             <div className="container">
                 <Text style='h2'>Информация</Text>
-                <Text style='h3'>IP:  XAXOfficial.minehut.gg</Text>
+                <Text style='h3'>IP:  f1.skycloud.su:25181</Text>
                 <Text style='h3'>Версия: 1.20.4 Java Edition</Text>
             </div>
             <div className="container">
