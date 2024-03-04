@@ -1,7 +1,6 @@
 import { Text } from '@/ui/components/elements';
 import './style.scss';
 import { FaTwitch, FaTelegram, FaYoutube, FaSteam } from 'react-icons/fa';
-import { RiKickFill } from "react-icons/ri";
 import Link from 'next/link';
 
 export default function Page() {
@@ -24,12 +23,6 @@ export default function Page() {
                             <FaYoutube />
                             <Text style='h3'>Ютуб</Text>
                         </Link>
-                        <Link target='_blank' href='https://trovo.live/s/XAXdanil/230463298' className="link" id='trovo'>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="22.217407" height="21.969238" viewBox="0 0 22.2174 21.9692" fill="none">
-                                <path id="path" d="M15.2001 0.00344849C15.5 0.00344849 15.7001 0.203461 15.7001 0.503448L15.7001 0.603455L15 3.80344C15 3.90344 15.1001 4.10345 15.2001 4.10345L21.7001 4.10345C22 4.10345 22.2924 4.30344 22.2001 4.70346L20.7001 11.0035C20.6001 11.3035 20.4 11.4035 20.1001 11.4035L16.6001 11.2035C15.5 11.2035 14.3 11.5035 13.4 12.5035C12.2001 13.7035 12.1001 15.5035 12.6001 16.8035C13.1001 18.1035 14.5 18.8035 15.9 18.5035C17 18.3035 17.6001 17.2035 17.5 16.3035C17.4 15.3035 17 15.0035 16.4 15.0035C15.8 15.0035 15.6001 15.3035 15.6001 15.6035C15.6001 15.9035 15.7001 16.1035 15.9 16.3035C16.2001 16.6035 15.6001 17.5035 14.8 17.0035C14.3 16.7035 14 16.1035 14.1001 15.2035C14.2001 14.1035 15.1001 13.1035 16.7001 13.1035C18.3 13.1035 19.5 14.1035 19.8 15.6035C20.3 17.5035 19.3 19.8035 17 21.0035C14.2001 22.5035 9.5 22.4035 6.90002 19.6035C5.40002 18.0035 4.90002 15.9035 5 14.0035C5 13.4035 5.09998 12.7035 5.30005 12.1035C5.30005 11.9035 5.19995 11.7035 5 11.6035L0.5 11.6035C0.199951 11.6035 0 11.3035 0 11.0035L0 10.9035L1.40002 4.80344C1.5 4.40344 1.80005 4.20346 2.19995 4.20346L6.5 4.20346C6.69995 4.10345 6.90002 4.00345 7 3.70346L7.69995 0.603455C7.80005 0.203461 8.20007 0.00344849 8.5 0.00344849L15.2001 0.00344849Z" fill='currentColor' fillOpacity="1.000000" fillRule="evenodd"/>
-                            </svg>
-                            <Text style='h3'>Трово</Text>
-                        </Link>
                         <Link target='_blank' href='https://vkplay.live/xax' className="link" id='vkplay'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 100" fill="none">
                                 <g clip-path="url(#clip0_2_2)">
@@ -42,10 +35,6 @@ export default function Page() {
                                 </defs>
                             </svg>
                             <Text style='h3'>VK Play Live</Text>
-                        </Link>
-                        <Link target='_blank' href='https://kick.com/xaxdanil' className="link" id='kick'>
-                            <RiKickFill />
-                            <Text style='h3'>Kick</Text>
                         </Link>
                     </div>
                 </div>
